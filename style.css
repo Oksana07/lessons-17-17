@@ -1,16 +1,87 @@
-
 .tumb {
-height: 400px;
-width: 300px;
+  height: 400px;
+  width: 300px;
 
-background-color: aqua;
+  background-color: #00ffff;
 }
 
 .tumb > img {
- display: block;
- width: 100%;
- height: 100%;
- 
- object-fit: contain;
- object-position: left bottom;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+/* gradient */
+.title{
+  width: 100%;
+  height: 50px;
+font-size: 18px;
+font-weight: bold;
+  color: #fff;
+  text-align: center;
+
+    background-image: repeating-radial-gradient(circle,
+        purple,
+        purple 10px,
+        #4b026f 10px,
+        #4b026f 20px);
+}
+
+.gradient {
+  margin-top: 50px;
+  width: 500px;
+  height: 250px;
+
+  background-image: linear-gradient(
+    to right,
+    #f44336 15%,
+    #09792b 40%,
+    #00b9ff 65%,
+    #ffb800
+  );
+}
+
+/* radial */
+.radial {
+  margin-top: 50px;
+  width: 500px;
+  height: 250px;
+
+  background-image: radial-gradient(
+    /* circle at center, */ #f44336,
+    #09792b,
+    #00b9ff
+  );
+}
+
+/* repeating */
+.repeating {
+  margin-top: 50px;
+  width: 500px;
+  height: 250px;
+
+  background-image: repeating-linear-gradient(
+    /* to left, */ /* to bottom, */ /* to top right, */ /* to bottom right, */
+      blue,
+    blue 20px,
+    red 20px,
+    red 40px
+  );
+}
+
+.repeating {
+  margin-top: 50px;
+  width: 500px;
+  height: 250px;
+
+  background-image: repeating-radial-gradient(
+    circle at center,
+    blue,
+    blue 20px,
+    red 20px,
+    red 40px
+  );
 }
